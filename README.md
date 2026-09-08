@@ -36,7 +36,8 @@ Minecraft Bedrock normally provides access to external servers through its serve
 
 BedrockServerRelay uses a different path:
 
-```Minecraft Bedrock Client
+```
+Minecraft Bedrock Client
         │
         │ LAN connection
         ▼
@@ -44,7 +45,8 @@ BedrockServerRelay
         │
         │ Packet forwarding
         ▼
-   Real Bedrock Server```
+   Real Bedrock Server
+```
 
 The relay uses CloudburstMC protocol libraries to receive and transmit Bedrock network packets.
 
@@ -56,12 +58,12 @@ This avoids relying on the client's authenticated external-server browser.
 
 - Java
 - Android
-- CloudburstMC Protocol
+- [CloudburstMC Protocol](https://github.com/CloudburstMC/protocol)
 - Minecraft Bedrock network protocol
 
 ## 🚧 Current Status
 
-BedrockServerRelay is currently an experimental project.
+**BedrockServerRelay** is currently an experimental project.
 
 The core relay functionality works, and the Android implementation has successfully been integrated with the relay. More extensive testing and edge-case handling are still planned.
 
@@ -72,3 +74,4 @@ Minecraft Bedrock's client-side restrictions can make connecting to certain comm
 This project explores an alternative connection path by making the remote server appear as a LAN game and forwarding the underlying Bedrock protocol traffic.
 
 ## 📄 License
+[MIT License](/LICENSE)
