@@ -4,6 +4,7 @@
 
 The relay works by exposing the target server as a local/LAN game. The Bedrock client connects to the relay through its LAN-world interface, while the relay forwards the network packets between the client and the actual server.
 
+Download Jar file or Android App from [Release page](/releases)
 ## ✨ Features
 
 - Connect to Bedrock servers through the client's LAN-world interface
