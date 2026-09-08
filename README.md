@@ -1,6 +1,6 @@
 # BedrockServerRelay
 
-*BedrockServerRelay* is a relay application that allows Minecraft Bedrock clients to connect to servers that permit non-authenticated clients, even when the Bedrock client's server browser requires an Xbox account.
+**BedrockServerRelay** is a relay application that allows Minecraft Bedrock clients to connect to servers that permit non-authenticated clients, even when the Bedrock client's server browser requires an Xbox account.
 
 The relay works by exposing the target server as a local/LAN game. The Bedrock client connects to the relay through its LAN-world interface, while the relay forwards the network packets between the client and the actual server.
 
@@ -26,7 +26,7 @@ A standalone JAR version is also available.
 
 Run it with:
 
-java -jar bedrockserverrelay.jar <server-ip>
+`java -jar bedrockserverrelay.jar <server-ip>`
 
 The relay then exposes the specified server through the LAN interface.
 
@@ -36,7 +36,7 @@ Minecraft Bedrock normally provides access to external servers through its serve
 
 BedrockServerRelay uses a different path:
 
-Minecraft Bedrock Client
+```Minecraft Bedrock Client
         │
         │ LAN connection
         ▼
@@ -44,7 +44,7 @@ BedrockServerRelay
         │
         │ Packet forwarding
         ▼
-   Real Bedrock Server
+   Real Bedrock Server```
 
 The relay uses CloudburstMC protocol libraries to receive and transmit Bedrock network packets.
 
