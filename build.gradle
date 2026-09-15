@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'com.k1.bedrockServerRelay'
+version = '0.1'
+
+repositories {
+    maven{
+        url 'https://repo.opencollab.dev/maven-snapshots/'
+    }
+    maven{
+        url 'https://repo.opencollab.dev'
+    }
+    maven{
+        url 'https://repo.opencollab.dev/maven-releases/'
+    }
+    mavenCentral()
+    //maven("https://repo.opencollab.dev/maven-snapshots/")
+}
+
+dependencies {
+    implementation 'org.cloudburstmc.protocol:bedrock-connection:3.0.0.Beta13-SNAPSHOT'
+    implementation 'org.slf4j:slf4j-simple:2.0.17'
+}
+
+application {
+    mainClass = 'com.k1.bedrockServerRelay.main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.k1.bedrockServerRelay.main'
+        )
+    }
+}
