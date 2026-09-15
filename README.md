@@ -30,16 +30,22 @@ Run it with:
 `java -jar bedrockserverrelay.jar <server-ip>`
 
 The relay then exposes the specified server through the LAN interface.
-##Run From Source
 
-#Requirements
+## ⚡ Runnig From Source
+
+### Requirements
 - Java 21 or newer
 - Git
 - An internet connection for Gradle to download dependencies
-  
+
+### Steps
 1. Clone the repository
-git clone https://github.com/kayvan-sh/bedrock-server-relay.git
+   
+```
+git clone https://github.com/kayvan-sh/bedrock-server-relay.git`
 cd bedrock-server-relay
+```
+
 2. Build the project
 
 Linux / macOS:
