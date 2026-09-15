@@ -4,7 +4,7 @@
 
 The relay works by exposing the target server as a local/LAN game. The Bedrock client connects to the relay through its LAN-world interface, while the relay forwards the network packets between the client and the actual server.
 
-Download Jar file or Android App from [Release page](/release).
+Download Jar file or Android App from [Releases page](https://github.com/kayvan-sh/Bedrock-Server-Relay/releases).
 ## ✨ Features
 
 - Connect to Bedrock servers through the client's LAN-world interface
@@ -17,6 +17,8 @@ Download Jar file or Android App from [Release page](/release).
 
 BedrockServerRelay includes an Android application designed for Android Minecraft Bedrock clients.
 
+Download from [Releases page](https://github.com/kayvan-sh/Bedrock-Server-Relay/releases).
+
 The application allows you to enter a server address and expose it to Minecraft as a local/LAN game.
 
 «Status: Experimental — the Android implementation is working, but further testing is still required.»
@@ -24,6 +26,8 @@ The application allows you to enter a server address and expose it to Minecraft 
 ## ☕ JAR
 
 A standalone JAR version is also available.
+
+Download from [Releases page](https://github.com/kayvan-sh/Bedrock-Server-Relay/releases).
 
 Run it with:
 
